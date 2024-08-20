@@ -10,7 +10,7 @@ import { BallTriangle } from "react-loader-spinner";
 import { fetchMovieDetails } from "../../services/api";
 import css from "./MoviesDetailPage.module.css";
 
-const MovieDetailsPage = () => {
+const MoviesDetailsPage = () => {
   const [movie, setMovie] = useState(null); // Змінено початковий стан на null
   const { movieId } = useParams();
   console.log(movieId);
@@ -57,6 +57,7 @@ const MovieDetailsPage = () => {
         </Link>
       </div>
       <div className={css.div}>
+
         <img
           src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
           alt={movie.title}
@@ -108,4 +109,4 @@ const MovieDetailsPage = () => {
   );
 };
 
-export default MovieDetailsPage;
+export default MoviesDetailsPage;

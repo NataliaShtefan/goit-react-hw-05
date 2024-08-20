@@ -58,7 +58,6 @@ const MoviesPage = () => {
 
   return (
     <div className={css.div}>
-      <h2 className={css.h2}>Search Movies</h2>
       <form className={css.form} onSubmit={onSubmit}>
         <input
           className={css.input}

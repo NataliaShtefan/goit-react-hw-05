@@ -33,6 +33,7 @@ const searchMovies = async (query) => {
         Authorization: `Bearer ${API_TOKEN}`,
       },
     });
+
     return res.data;
   };
   

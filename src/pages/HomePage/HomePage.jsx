@@ -23,7 +23,6 @@ const HomePage = () => {
 
   return (
     <div className={s.div}>
-      <h2 className={s.title}>Popular movies:</h2>
       {isError ? <p>{isError}</p> : <MoviesList movies={movies} />}
     </div>
   );

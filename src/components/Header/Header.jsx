@@ -8,7 +8,7 @@ import s from "./Header.module.css"
 const Header = () => {
   return (
     <header className={s.header}>
-      <h1>header</h1>
+      <h1>Movies Library</h1>
       <nav>
        <Navigation/>
       </nav>
