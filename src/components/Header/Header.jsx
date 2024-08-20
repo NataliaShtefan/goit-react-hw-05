@@ -1,21 +1,18 @@
-import { Link } from "react-router-dom"
+
+import Navigation from "../Navigation/Navigation"
+import s from "./Header.module.css"
+
+
 
 
 const Header = () => {
   return (
-    <div>
+    <header className={s.header}>
       <h1>header</h1>
       <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/movies">Movies</Link>
-          </li>
-        </ul>
+       <Navigation/>
       </nav>
-    </div>
+    </header>
   )
 }
 
